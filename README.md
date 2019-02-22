@@ -6,7 +6,7 @@ Position = Position + Speed
 
 Speed = Speed + 0.001 * Action - 0.0025 * cos(3 * Position)
 
-# Differential Semi-Gradient SARSA
+# Semi-Gradient SARSA
 
 
 ![](Fig10_1_MountainCar_Movement_Episode9000.gif)
@@ -64,11 +64,14 @@ Figure 10.4: Comparison of the n-Step Differential Semi-Gradient SARSA for vario
 
 
 
+# Differential Semi-Gradient SARSA
 
 
 # Access Control
 
-Following are the figures for Access Control of unlimited queue of users with priorities 1, 2, 3 and 4 each giving a reward 1, 2, 4 and 8(if served) where the the first user on the queue is either served or rejected. There are 10 servers and each time step a busy server is becoming available with probability 0.06. If there are no free servers the user is always rejected. Being rejected gives reward 0.
+Following are the figures for servers Access Control of unlimited queue of users with priorities 1, 2, 3 and 4 each giving a reward 1, 2, 4 and 8(if served) where the the first user on the queue is either served or rejected. There are 10 servers and each time step a busy server is becoming available with probability 0.06. If there are no free servers the user is always rejected. Being rejected gives reward 0.
+
+This is the policy learned after 3 milion steps for whether to accept or reject an user given the current free servers and priority of the user:
 
 ![](AccessControl/Fig10_5_AccessControl_Policy.bmp)
 

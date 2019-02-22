@@ -64,7 +64,7 @@ Figure 10.4: Comparison of the n-Step Differential Semi-Gradient SARSA for vario
 
 
 
-# AccessContol
+# Access Control
 
 Following are the figures for Access Control of unlimited queue of users with priorities 1, 2, 3 and 4 each giving a reward 1, 2, 4 and 8(if served) where the the first user on the queue is either served or rejected. There are 10 servers and each time step a busy server is becoming available with probability 0.06. If there are no free servers the user is always rejected. Being rejected gives reward 0.
 

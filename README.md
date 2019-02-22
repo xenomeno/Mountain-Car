@@ -1,14 +1,16 @@
 # Mountain Car
 
-The car is moving in the mountain described by the curve y = sin(3 * x). It is drawn for the interval x[-1.2,0.5]. The car start randomly between [-0.6,-0.4] with zero velocity which may range from [-0.7, 0.7]. Each time step the reward is -1 until the goal 0.5 is reached. When hitting on the left(-1.2) the car is reset to zero speed. The actions on each time step are: full throttle forward, full reverse and no throttle with values [-1,0,1]. Each time step the position and speed are updated by the rules:
+The car is moving in the mountain described by the curve y = sin(3 * x). It is drawn for the interval x[-1.2,0.5]. The car starts randomly between [-0.6,-0.4] with zero velocity which may range from [-0.7, 0.7]. Each time step the reward is -1 until the goal on the right(0.5) is reached. When hitting on the left(-1.2) the car is reset to zero speed. The actions on each time step are: full throttle forward, full reverse and no throttle with values [-1,0,1]. Each time step the position and speed are updated by the rules:
 
-Position = Position + Speed, -1.2, 0.5
+Position = Position + Speed
 
 Speed = Speed + 0.001 * Action - 0.0025 * cos(3 * Position)
 
+# Differential Semi-Gradient SARSA
+
+
 ![](Fig10_1_MountainCar_Movement_Episode9000.gif)
 
-# Differential Semi-Gradient SARSA
 
 
 

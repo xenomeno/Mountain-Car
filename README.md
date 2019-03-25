@@ -18,7 +18,7 @@ Speed = Speed + 0.001 * Action - 0.0025 * cos(3 * Position)
 
 <b>Chapter 10: Reinforcement Learning: An Introduction(2nd edition) by Sutton &amp; Barto</b>
 
-This is reporoduction of figures from the the book. I have some inconsistencies with Tile Coding as you can see on Figure 10.2 - the Alpha values are in the exact opposite order compared to the book. Alpha 0.10 has the best performance, followed by 0.2 and Alpha 0.5 being the worst. I am not sure why - I use my own implementation of 8-Tile Coding. The Position-Veloicity state space is divided each by 8 tiles, displacement vector is (3,1) for each of the 8 tilings. Bitmap saving is implemented in pure Lua and is very slow!
+This is reporoduction of the figures from the the book. I have some inconsistencies with Tile Coding as you can see on Figure 10.2 - the Alpha values are in the exact opposite order compared to the book. Alpha 0.10 has the best performance, followed by 0.2 and Alpha 0.5 being the worst. I am not sure why - I use my own implementation of 8-Tile Coding. The Position-Velocity state space is divided each by 8 tiles, displacement vector is (3,1) for each of the 8 tilings. Bitmap saving is implemented in pure Lua and is very slow!
 
 
 
